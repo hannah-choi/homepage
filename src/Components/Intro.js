@@ -5,9 +5,11 @@ function Intro() {
         <>
             <div className="intro contents">
                 <h2>
-                    I'm Hannah Choi,
+                    Hannah Choi
                     <br />
-                    <br />A front-end developer
+                    <br />A London-based
+                    <br />
+                    frontend developer
                     <br />
                     with design background.
                     <br />
