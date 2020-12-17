@@ -5,14 +5,18 @@ import { ReactComponent as Linkedin } from "./svg/linkedin.svg";
 function Footer() {
     return (
         <footer>
-            <Github
-                className="icon social"
-                style={{ width: `20px`, height: `20px` }}
-            />{" "}
+            {/* 
             <Linkedin
                 className="icon social"
                 style={{ width: `20px`, height: `20px` }}
-            />{" "}
+            />{" "} */}
+            <p>©2020 Hannah Choi</p>
+            <h4>
+                <Github
+                    className="icon social"
+                    style={{ width: `28px`, height: `28px` }}
+                />{" "}
+            </h4>
         </footer>
     );
 }

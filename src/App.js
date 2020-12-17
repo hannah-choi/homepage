@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Intro from "./Components/Intro";
 import Works from "./Components/Works";
 import Footer from "./Components/Footer";
+import History from "./Components/History";
 import Toggle from "./Components/Toggle";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./Components/Theme";
@@ -20,11 +21,13 @@ function App() {
     return (
         <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
             <GlobalStyles />
-            <Toggle theme={theme} toggleTheme={toggleTheme} />
             <div className="App">
-                <Intro />
-                <Works />
-                <Footer />
+                <div className="wrapper">
+                    <Toggle theme={theme} toggleTheme={toggleTheme} />
+                    <Intro />
+                    <Works />
+                    <Footer />
+                </div>
             </div>
         </ThemeProvider>
     );

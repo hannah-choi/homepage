@@ -14,6 +14,8 @@ export const GlobalStyles = createGlobalStyle`
     display: flex;
     height: 100vh;
     transition: background-color .3s;
+    position:relative;
+    justify-content:center;
   }
 
 
@@ -21,11 +23,18 @@ export const GlobalStyles = createGlobalStyle`
       list-style-type:none;
   }
 
-  .contents {
-      width: 100%;
-      margin-top: 15rem;
-      margin-left: 10rem;
+  .wrapper {
+      width: 1000px;
+      margin: 2rem auto;
+      position:relative;
+      display:block;
   }
+
+  .contents{
+      width:100%;
+      padding-top: 10rem;
+  }
+
 
   h2{
     font-size: 3.3rem;
@@ -40,10 +49,10 @@ export const GlobalStyles = createGlobalStyle`
 
   .toggleDiv{
     position:absolute;
-    right:40px;
-    top: 40px;
+    right:0;
     display:flex;
     align-items:center;
+    margin-bottom:50px;
 }  
 
 .icon{
@@ -148,19 +157,15 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   ul.workGallery{
-      width:80%;
       display:flex;
       flex-wrap:wrap;
-      margin-left: 10rem;
       justify-content:space-between;
-      position:relative;
   }
   
   li.workLi{
     overflow: hidden;
       flex-basis:32%;
       margin-top: 20px;
-
   }
 
 .thumbnail{
@@ -209,20 +214,20 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   footer{
-    position:absolute;
-    right: 4rem;
+    width:100%;
     margin-top: 5rem;
     display: flex;
+    justify-content: space-between;
     align-items:center;
+    margin-bottom: 3rem;
   }
+
 
 
   @media (max-width: 767px) {
 
     .contents {
         width: 80%;
-        margin-top: 50%;
-        margin-left: 40px;
     }
 
     h2{
@@ -233,7 +238,6 @@ export const GlobalStyles = createGlobalStyle`
         width:80%;
         display:flex;
         flex-wrap:wrap;
-        margin-left: 40px;
         justify-content:space-between;
         position:relative;
     }
@@ -255,9 +259,6 @@ export const GlobalStyles = createGlobalStyle`
           } 
       }
     
-      footer{
-        margin-left: 40px;
-      }
 
 
   }
