@@ -13,9 +13,12 @@ function Intro() {
                     <br />
                     with design background.
                     <br />
+                    <br />
                 </h2>
                 <br />
-                Get in touch! hannahchoi.developer@gmail.com
+                <div class="introDiv">
+                    <div className="mail">hannahchoi.developer@gmail.com</div>
+                </div>
             </div>
         </>
     );

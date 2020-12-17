@@ -4,7 +4,7 @@ import { ReactComponent as Sun } from "./svg/sun.svg";
 import { ReactComponent as Moon } from "./svg/moon.svg";
 
 const Toggle = ({ theme, toggleTheme }) => {
-    const isLight = theme === "light";
+    const isLight = theme === "dark";
     return (
         <div className="toggleDiv">
             <Sun className="icon" style={{ width: `20px`, height: `20px` }} />
