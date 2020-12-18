@@ -17,7 +17,14 @@ function Intro() {
                 </h2>
                 <br />
                 <div class="introDiv">
-                    <div className="mail">hannahchoi.developer@gmail.com</div>
+                    <a
+                        className="mail"
+                        href="mailto:hannahchoi.developer@gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        hannahchoi.developer@gmail.com
+                    </a>
                 </div>
             </div>
         </>

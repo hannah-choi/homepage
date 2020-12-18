@@ -219,23 +219,28 @@ export const GlobalStyles = createGlobalStyle`
     display: flex;
     justify-content: space-between;
     align-items:center;
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    font-family:'regular';
+    font-size: 0.8rem;
   }
 
+
+  .github:hover{
+    fill:${({ theme }) => theme.point};
+  }
 
 
   @media (max-width: 767px) {
 
-    .contents {
-        width: 80%;
+    .wrapper {
+        width: 85%;
     }
 
     h2{
-        font-size:2.8rem;
+        font-size:2.2rem;
     }
 
     ul.workGallery{
-        width:80%;
         display:flex;
         flex-wrap:wrap;
         justify-content:space-between;
