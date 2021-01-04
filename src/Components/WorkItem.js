@@ -1,7 +1,7 @@
 import React from "react";
 import Innercontents from "./InnerContents";
 
-function Workitem({ link, project, tech, img }, i) {
+function Workitem({ link, project, tech, img, desc }, i) {
     return (
         <li className="workLi">
             <a href={link} target="_blank" rel="nonreferrer">
@@ -9,7 +9,7 @@ function Workitem({ link, project, tech, img }, i) {
                     <div className="portfolioImg">
                         <img src={img} alt="" className="thumbnail" />
                     </div>
-                    <Innercontents project={project} tech={tech} />
+                    <Innercontents project={project} tech={tech} desc={desc} />
                 </div>
             </a>
         </li>

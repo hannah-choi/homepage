@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Intro from "./Components/Intro";
+import Intro2 from "./Components/Intro2";
 import Works from "./Components/Works";
 import Footer from "./Components/Footer";
 import History from "./Components/History";
@@ -25,6 +26,7 @@ function App() {
                 <div className="wrapper">
                     <Toggle theme={theme} toggleTheme={toggleTheme} />
                     <Intro />
+                    <Intro2 />
                     <Works />
                     <Footer />
                 </div>

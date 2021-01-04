@@ -1,6 +1,6 @@
 import React from "react";
 
-function Innercontents({ project, tech }) {
+function Innercontents({ project, tech, desc }) {
     const techItem = { tech }.tech.map((item, i) => (
         <span key={i} className="skills">
             {item}
@@ -10,9 +10,7 @@ function Innercontents({ project, tech }) {
     return (
         <>
             <h3>{project}</h3>
-            <p class="skillDesc">
-                Dolor aute aliquip nisi ut aliqua ipsum eu anim mollit laborum.
-            </p>
+            <p class="skillDesc">{desc}</p>
             <div className="skillWrapper">{techItem}</div>
         </>
     );
