@@ -18,7 +18,6 @@ export const GlobalStyles = createGlobalStyle`
     justify-content:center;
   }
 
-
   ul, li{
       list-style-type:none;
   }
@@ -35,12 +34,17 @@ export const GlobalStyles = createGlobalStyle`
       padding-top: 10rem;
   }
 
+  .secondary{
+    color: ${({ theme }) => theme.secondary};
+  }
+
 
   h2{
     font-size: 3.3rem;
     font-weight:normal;
     line-height: 1.2;
   }
+
 
   .introDiv{
     display:flex;
@@ -56,7 +60,7 @@ export const GlobalStyles = createGlobalStyle`
 }  
 
 .icon{
-    fill: ${({ theme }) => theme.text};
+    fill: ${({ theme }) => theme.secondary};
 }
 
   .switch-checkbox {
@@ -88,7 +92,7 @@ export const GlobalStyles = createGlobalStyle`
     height: 21px;
     border-radius: 35px;
     transition: 0.2s;
-    background: #fff;
+    background: ${({ theme }) => theme.body};
     box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
   }
   
@@ -107,6 +111,7 @@ export const GlobalStyles = createGlobalStyle`
     cursor:pointer;
     padding: 5px;
     box-sizing:border-box;
+    color: ${({ theme }) => theme.point};
     
     span {
       z-index: 20;
@@ -148,11 +153,6 @@ export const GlobalStyles = createGlobalStyle`
         opacity:1;
         z-index:10;
         transition: border 0.5s ease-in-out;
-    }
-    
-    &:after {
-      left: 120%;
-      transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
     }
   }
 
@@ -224,6 +224,9 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 0.8rem;
   }
 
+  .github{
+    fill: ${({ theme }) => theme.text};
+}
 
   .github:hover{
     fill:${({ theme }) => theme.point};

@@ -1,25 +1,59 @@
 @font-face {
-    font-family: "medium";
-    src: url("./fonts/medium.woff") format("woff");
+    font-family: "bold";
+    src: url("./fonts/bold.otf") format("openType");
 }
 
 @font-face {
     font-family: "regular";
-    src: url("./fonts/regular.ttf") format("trueType");
+    src: url("./fonts/regular.otf") format("openType");
+}
+
+@font-face {
+    font-family: "title";
+    src: url("./fonts/title.otf") format("openType");
 }
 
 @font-face {
     font-family: "mono";
-    src: url("./fonts/mono.woff") format("woff");
+    src: url("./fonts/mono.otf") format("openType");
 }
 
 body {
-    font-family: "medium";
+    font-family: "regular";
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: normal;
+    font-family: bold;
+}
+
+.title {
+    font-family: title;
+    font-size: 45pt;
+}
+
+.introbody {
+    font-size: 15pt;
+    padding-left: 4px;
+}
+
+.thumbnail {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 13pt;
+}
+
+.bodytext {
+    font-family: "regular";
 }
 
 body,
