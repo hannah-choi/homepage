@@ -36,7 +36,7 @@ function Works() {
         {
             link: "http://bookquotes.hannahchoi.net", //pm2 사용?
             project: "Book Quotes",
-            tech: ["NodeJS", "MySQL"],
+            tech: ["NodeJS", "MySQL", "Responsive"],
             img: "/images/bookquotes.png",
             desc:
                 "A web app with CRUD Features built with Node JS(ejs) & MySQL",

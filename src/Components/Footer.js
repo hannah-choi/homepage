@@ -10,11 +10,12 @@ function Footer() {
                 className="icon social"
                 style={{ width: `20px`, height: `20px` }}
             />{" "} */}
-            <p class="secondary">© 2020 Hannah Choi</p>
+            <p className="secondary">© 2020 Hannah Choi</p>
             <a
                 href="https://github.com/hannah-developer"
+                a
                 target="_blank"
-                rel="nonreferrer"
+                rel="noopener noreferrer"
             >
                 <Github
                     className="github icon"
