@@ -224,11 +224,12 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 0.8rem;
   }
 
-  .github{
+  .github,
+  .linkedIn{
     fill: ${({ theme }) => theme.text};
 }
 
-  .github:hover{
+  .github:hover, .linkedIn:hover{
     fill:${({ theme }) => theme.point};
   }
 

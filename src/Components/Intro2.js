@@ -4,26 +4,17 @@ function Intro2() {
     return (
         <>
             <div className="intro">
-                <h3 className="bodytext">
-                    I am a developer because I didn't want to stop learning.{" "}
+                <h4 className="bodytext">
+                    <br /> Mostly I write code in Javascript and use React,
+                    NodeJS, MySQL. <br />I also love working on Linux web server
+                    and database as much as I do the front-end side. <br />
                     <br />
-                    <br />I loved to be a designer, but some part of me felt
-                    like design is only half of it; I constantly desired to
-                    convert my vision into an actual user experience. That
-                    thirst led me to step out of my comfort zone.
+                    I design apps with reusability & user-driven approach in
+                    mind. <br />
+                    Currently I'm stretching myself, teaching myself JavaScript
+                    Algorithms and data structure to go deeper.
                     <br />
-                    <br />
-                    Demystifying the programming wasn't easy; The endless
-                    question of 'Why this is not working?' or 'Why this is
-                    working?', getting used to the ugly monospaced fonts..
-                    <br />
-                    <br />
-                    But when I built the first website with full javascript
-                    features on my own — when those several code lines brought
-                    life to my draft — I realised that coding was the better
-                    half that I was looking for. I never stopped coding since
-                    then.
-                </h3>
+                </h4>
             </div>
         </>
     );

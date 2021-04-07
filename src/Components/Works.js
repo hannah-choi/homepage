@@ -8,14 +8,15 @@ function Works() {
             project: "Timezone Converter",
             tech: ["React", "Redux"],
             img: "/images/timezone.png",
-            desc: "A web timezone converter built with React.js, Redux",
+            desc:
+                "A web timezone converter for scheduling meeting/events across multiple time zones.",
         },
         {
             link: "http://imageeditor.hannahchoi.net",
             project: "Image Editor",
             tech: ["React", "MySQL", "Express"],
             img: "/images/imageeditor.png",
-            desc: "A web image editor app built with React & Express",
+            desc: "A beautiful web image editor with modern photo effects.",
         },
         {
             link: "http://memo.hannahchoi.net",
@@ -23,15 +24,14 @@ function Works() {
             tech: ["JavaScript", "MySQL", "Express"],
             img: "/images/memo.png",
             desc:
-                "A sticky note web app with CRUD feature. Created with Vanilla JavaScript, MySQL, Express",
+                "A minimal memo web app. Modularized code using Class for encapsulation and reusability.",
         },
         {
             link: "http://jsy.hannahchoi.net",
             project: "OrderSystem",
             tech: ["JavaScript", "MySQL", "Express"],
             img: "/images/jsy.png",
-            desc:
-                "A virtual cashier dashboard app for the Jing Sheng Yu(Taiwanese tea brand) store",
+            desc: "A virtual cashier dashboard app. Modularized with Class.",
         },
         {
             link: "http://bookquotes.hannahchoi.net", //pm2 사용?
@@ -39,7 +39,7 @@ function Works() {
             tech: ["NodeJS", "MySQL", "Responsive"],
             img: "/images/bookquotes.png",
             desc:
-                "A web app with CRUD Features built with Node JS(ejs) & MySQL",
+                " A minimal app with CRUD Features. Utilised server-side rendering(ejs) & MySQL.",
         },
         {
             link: "http://hannahchoi.net/calculator_react",
@@ -53,7 +53,8 @@ function Works() {
     return (
         <>
             <div className="works contents">
-                <h4>Featured Works</h4>
+                <h3>Featured Works</h3>
+                <p>Each demo has link to its github repo</p>
             </div>
             <ul className="workGallery">
                 {array.map(({ link, project, tech, img, desc }, i) => (

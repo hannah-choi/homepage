@@ -9,7 +9,7 @@ function Innercontents({ project, tech, desc }) {
 
     return (
         <>
-            <h3>{project}</h3>
+            <h4>{project}</h4>
             <p className="skillDesc">{desc}</p>
             <div className="skillWrapper">{techItem}</div>
         </>
