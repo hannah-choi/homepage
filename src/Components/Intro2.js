@@ -5,6 +5,8 @@ function Intro2() {
         <>
             <div className="intro">
                 <h4 className="bodytext">
+                    I'm JavaScript developer with 4 years of design experience.{" "}
+                    <br />
                     <br /> Mostly I write code in Javascript and use React,
                     NodeJS, MySQL. <br />I also love working on Linux web server
                     and database as much as I do the front-end side. <br />

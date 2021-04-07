@@ -6,10 +6,9 @@ function Footer() {
     return (
         <footer>
             <p className="secondary">© 2020 - 2021 Hannah Choi</p>
-            <div class="sns">
+            <div className="sns">
                 <a
                     href="https://www.linkedin.com/in/hannahchoi-developer"
-                    a
                     target="_blank"
                     rel="noopener noreferrer"
                 >
@@ -21,7 +20,6 @@ function Footer() {
 
                 <a
                     href="https://github.com/hannah-developer"
-                    a
                     target="_blank"
                     rel="noopener noreferrer"
                 >

@@ -4,9 +4,6 @@ function Intro() {
     return (
         <div className="intro contents">
             <p className="title">Hannah Choi</p>
-            <p className="introbody">
-                JavaScript developer with 4 years of design experience
-            </p>
             <div className="introDiv">
                 <a
                     className="mail"
