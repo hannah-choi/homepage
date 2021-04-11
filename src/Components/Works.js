@@ -10,13 +10,18 @@ function Works() {
             img: "/images/timezone.png",
             desc:
                 "A web timezone converter for scheduling meeting/events across multiple time zones.",
+            repo: "https://github.com/hannah-developer/timezoneconverter_react",
+            live: "http://hannahchoi.net/timezone_react/",
         },
         {
             link: "http://imageeditor.hannahchoi.net",
             project: "Image Editor",
             tech: ["React", "MySQL", "Express"],
             img: "/images/imageeditor.png",
-            desc: "A beautiful web image editor with modern photo effects.",
+            desc:
+                "A minimal web image editor with various modern photo effects. Utilized Multer, React and Canvas API.",
+            repo: "https://github.com/hannah-developer/image_editor",
+            live: "http://imageeditor.hannahchoi.net",
         },
         {
             link: "http://memo.hannahchoi.net",
@@ -24,14 +29,19 @@ function Works() {
             tech: ["JavaScript", "MySQL", "Express"],
             img: "/images/memo.png",
             desc:
-                "A minimal memo web app. Modularized code using Class for encapsulation and reusability.",
+                "A minimal memo web app built with Vanilla JavaScript. Modularized code using Class for encapsulation and reusability.",
+            repo: "https://github.com/hannah-developer/memo",
+            live: "http://memo.hannahchoi.net",
         },
         {
             link: "http://jsy.hannahchoi.net",
             project: "OrderSystem",
             tech: ["JavaScript", "MySQL", "Express"],
             img: "/images/jsy.png",
-            desc: "A virtual cashier dashboard app. Modularized with Class.",
+            desc:
+                "A virtual cashier dashboard app built with Vanilla JavaScript. Modularized with Class.",
+            repo: "https://github.com/hannah-developer/ordersystem",
+            live: "http://jsy.hannahchoi.net",
         },
         {
             link: "http://bookquotes.hannahchoi.net", //pm2 사용?
@@ -40,13 +50,8 @@ function Works() {
             img: "/images/bookquotes.png",
             desc:
                 " A minimal app with CRUD Features. Utilised server-side rendering(ejs) & MySQL.",
-        },
-        {
-            link: "http://hannahchoi.net/calculator_react",
-            project: "Calculator",
-            tech: ["React"],
-            img: "/images/calculator.png",
-            desc: "A web adaptation of iOS calculator built with react.",
+            repo: "https://github.com/hannah-developer/book_quotes",
+            live: "http://bookquotes.hannahchoi.net",
         },
     ];
 
@@ -54,19 +59,22 @@ function Works() {
         <>
             <div className="works contents">
                 <h3>Featured Works</h3>
-                <p>Each demo has link to its github repo</p>
             </div>
             <ul className="workGallery">
-                {array.map(({ link, project, tech, img, desc }, i) => (
-                    <WorkItem
-                        key={i}
-                        link={link}
-                        project={project}
-                        tech={tech}
-                        img={img}
-                        desc={desc}
-                    />
-                ))}
+                {array.map(
+                    ({ link, project, tech, img, desc, repo, live }, i) => (
+                        <WorkItem
+                            key={i}
+                            link={link}
+                            project={project}
+                            tech={tech}
+                            img={img}
+                            desc={desc}
+                            repo={repo}
+                            live={live}
+                        />
+                    )
+                )}
             </ul>
         </>
     );

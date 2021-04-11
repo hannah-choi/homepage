@@ -3,7 +3,6 @@ import Intro from "./Components/Intro";
 import Intro2 from "./Components/Intro2";
 import Works from "./Components/Works";
 import Footer from "./Components/Footer";
-import History from "./Components/History";
 import Toggle from "./Components/Toggle";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./Components/Theme";

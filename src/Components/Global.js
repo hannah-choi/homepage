@@ -23,7 +23,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .wrapper {
-      width: 1000px;
+      width: 800px;
       margin: 2rem auto;
       position:relative;
       display:block;
@@ -130,19 +130,6 @@ export const GlobalStyles = createGlobalStyle`
         content: "";
     }
     
-    &:after {
-      background: #fff;
-      content: "";
-      height: 155px;
-      left: -75px;
-      opacity: .3;
-      position: absolute;
-      top: -50px;
-      transform: rotate(35deg);
-      transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
-      width: 50px;
-      z-index: -10;
-    }
   }
   
   .mail:hover {
@@ -152,20 +139,22 @@ export const GlobalStyles = createGlobalStyle`
     &:before{
         opacity:1;
         z-index:10;
-        transition: border 0.5s ease-in-out;
     }
   }
 
   ul.workGallery{
       display:flex;
+      flex-diraction:column;
       flex-wrap:wrap;
       justify-content:space-between;
   }
   
   li.workLi{
     overflow: hidden;
-      flex-basis:32%;
-      margin-top: 20px;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 20px;
   }
 
 .thumbnail{
@@ -191,10 +180,18 @@ export const GlobalStyles = createGlobalStyle`
       width:100%;
   }
 
+  div.portfolioImg{
+      width: 40%;
+  }
 
-  .skills{
+  div.contentsDiv{
+      width:58%;
+      padding: 10px;
+  }
+
+  .links{
       font-family:'mono';
-      font-size:0.7rem;
+      font-size:0.8rem;
       margin: 5px 5px 5px 0px;
       padding:5px 8px;
       border-radius:3px;
@@ -203,8 +200,23 @@ export const GlobalStyles = createGlobalStyle`
 
   }
 
-  .skillWrapper{
-      margin: 10px 0 5px 0;
+  .links:hover{
+    border:1px solid ${({ theme }) => theme.point};
+    background-color:${({ theme }) => theme.point};
+    color: ${({ theme }) => theme.body};
+}
+
+
+  .linkWrapper{
+      margin: 20px 0 5px 0;
+  }
+
+  .skill {
+      padding-right: 5px;
+      opacity: 0.5;
+      border-radius: 20px;
+      font-size:0.9rem;
+      margin: 10px 0;
   }
 
   .skillDesc{
@@ -212,6 +224,37 @@ export const GlobalStyles = createGlobalStyle`
       font-family:"regular";
       font-size:0.9rem;
   }
+
+  span.herstory{
+      font-size:0.9rem;
+      width: 160px;
+      padding:0.8rem;
+      display:flex;
+      border: 1px solid ${({ theme }) => theme.point};
+      color:${({ theme }) => theme.point};
+      align-items:center;
+  }
+
+  span.herstory:hover {
+    color:${({ theme }) => theme.body};
+	background-color:${({ theme }) => theme.point};
+  }
+
+  span.herstory:hover > svg{
+	fill:${({ theme }) => theme.body};
+  }
+
+  span.herstory svg{
+    fill:${({ theme }) => theme.point};
+    margin-left:10px;
+  }
+
+  div.herStoryDiv {
+    margin-top:1rem;
+    width: 95%;
+    padding: 50px;
+    background:${({ theme }) => theme.dim};
+}
 
   footer{
     width:100%;
@@ -237,7 +280,7 @@ export const GlobalStyles = createGlobalStyle`
   @media (max-width: 767px) {
 
     .wrapper {
-        width: 85%;
+        width: 88%;
     }
 
     h2{
@@ -252,23 +295,23 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     li.workLi{
-        overflow: hidden;
-          flex-basis:100%;
-    
-          &:before {
-            z-index: -10;
-          }
-    
+        flex-direction:column;
+        width: 100%;
+        display:flex;
+        justify-content: space-between;
+        margin-top: 20px;
       }
-    
-      .workLi: hover{
-      
-        &:before {
-            z-index:-10;
-          } 
-      }
-    
 
+
+      div.portfolioImg{
+        width: 100%;
+    }
+  
+    div.contentsDiv{
+        width:100%;
+        padding: 10px;
+    }
+  
 
   }
 

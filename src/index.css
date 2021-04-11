@@ -14,6 +14,11 @@
 }
 
 @font-face {
+    font-family: "title-regular";
+    src: url("./fonts/title_regular.otf") format("openType");
+}
+
+@font-face {
     font-family: "mono";
     src: url("./fonts/mono.otf") format("openType");
 }
@@ -47,16 +52,18 @@ h3 {
 
 .bodytext {
     margin-top: 8rem;
-    width: 70%;
-    margin-bottom: 10rem;
+    width: 100%;
+    margin-bottom: 3rem;
+    font-size: 13pt;
+    font-family: "regular";
+}
+
+.intro {
+    margin-bottom: 5rem;
 }
 
 .thumbnail {
     border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.bodytext {
-    font-family: "regular";
 }
 
 body,
@@ -73,11 +80,12 @@ p {
 }
 
 h3 {
-    font-size: 16pt;
+    font-size: 20pt;
+    font-family: "title";
 }
 
 h4 {
-    font-size: 13pt;
+    font-size: 15pt;
     font-family: "bold";
 }
 
@@ -88,7 +96,15 @@ h4 {
     justify-content: space-between;
 }
 
+div.herStoryDiv {
+    font-family: "title-regular";
+}
+
 @media only screen and (max-width: 768px) {
+    .title {
+        font-size: 3rem;
+    }
+
     body {
         margin: 0.7rem;
     }
